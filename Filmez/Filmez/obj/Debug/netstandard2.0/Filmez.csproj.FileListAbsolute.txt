@@ -1,0 +1,17 @@
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\bin\Debug\netstandard2.0\Filmez.deps.json
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\bin\Debug\netstandard2.0\Filmez.dll
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\bin\Debug\netstandard2.0\ref\Filmez.dll
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\bin\Debug\netstandard2.0\Filmez.pdb
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\App.xaml.g.cs
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\ViewController\Login.xaml.g.cs
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\ViewController\MovieDetail.xaml.g.cs
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\ViewController\RegisterUser.xaml.g.cs
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\Filmez.AssemblyInfoInputs.cache
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\Filmez.AssemblyInfo.cs
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\Filmez.csproj.CoreCompileInputs.cache
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\Filmez.csproj.Fody.CopyLocal.cache
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\XamlC.stamp
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\Filmez.dll
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\ref\Filmez.dll
+E:\Projetos xamarim.forms\Filmez\Filmez\Filmez\obj\Debug\netstandard2.0\Filmez.pdb

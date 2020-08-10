@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Filmez.ViewController.MovieDetail">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Orientation="Vertical">
+
+                <Image Source="{Binding Movie.Image_backdrop}" />
+                <StackLayout Orientation="Horizontal" BackgroundColor="Purple">
+                    <Image Source="{Binding Movie.Image}" HeightRequest="80" WidthRequest="60" Margin="8"/>
+                    <StackLayout Orientation="Vertical" Margin="5">
+                        <StackLayout x:Name="StackStar" Orientation="Horizontal">
+                            <!--<Label Text="Média: " FontSize="18" FontAttributes="Bold" TextColor="White"/>-->
+                            <Image x:Name="favorite" HeightRequest="25" WidthRequest="25"/>
+                            <Label Text="{Binding Movie.Vote_average}" FontSize="18" FontAttributes="Bold" TextColor="BlueViolet"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <!--<Label Text="Popularidade: " FontSize="18" FontAttributes="Bold" TextColor="White"/>-->
+                            <Image  x:Name="heart" HeightRequest="25" WidthRequest="25"/>
+                            <Label Text="{Binding Movie.Popularity}" FontSize="18" FontAttributes="Bold" TextColor="BlueViolet"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                            <!--<Label Text="Lançamento:" FontSize="18" FontAttributes="Bold" TextColor="White"/>-->
+                            <Image x:Name="calendar" HeightRequest="25" WidthRequest="25"/>
+                            <Label Text="{Binding Movie.Release_date}" FontSize="18" FontAttributes="Bold" TextColor="BlueViolet"/>
+                        </StackLayout>
+                    </StackLayout>
+
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="10">
+
+                    <Label Text="Título" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="{Binding Movie.Title}" FontSize="18" />
+
+                    <Label Text="Sinopse" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="{Binding Movie.Overview}" FontSize="18"/>
+            
+                </StackLayout>
+                <StackLayout Orientation="Vertical" Margin="10">
+                    <Label x:Name="labelUser" FontSize="18"  />
+                    
+                    <Picker x:Name="pickerRating" HorizontalOptions="FillAndExpand" Title="Merece quantas estrelas:" FontSize="18">
+                        <Picker.Items>
+                            <x:String>1 estrela</x:String>
+                            <x:String>2 estrelas</x:String>
+                            <x:String>3 estrelas</x:String>
+                            <x:String>4 estrelas</x:String>
+                            <x:String>5 estrelas</x:String>
+                        </Picker.Items>
+                    </Picker>
+                    <Label Text="Comentário" FontSize="18"/>
+                    <Editor x:Name="editorComment" Placeholder="Faça seu comentário"
+                        HeightRequest="100"/>
+                    <Button Text="Salvar" BackgroundColor="#6a1b9a" Clicked="Comment_Clicked"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="Comentários:" FontSize="18" Margin="10" />
+                    <ListView x:Name="listViewCriticals" ItemsSource="{Binding CriticalList}" CachingStrategy="RecycleElement" SeparatorColor="White" HasUnevenRows="true">
+                        <ListView.ItemTemplate>
+                            <DataTemplate >
+                                <ViewCell>
+                                    <StackLayout  BackgroundColor="#eee" >
+
+                                        <StackLayout Orientation="Vertical"  Padding="10">
+                                            <StackLayout Orientation="Horizontal">
+                                                <Label Text="Usuário "/>
+                                                <Label Text="{Binding User.NickName}" FontAttributes="Bold" />
+                                                <Label Text="avaliou com "/>
+                                                <Label Text="{Binding Ranking}"  FontAttributes="Bold"/>
+                                                <Label Text=" estrelas."/>
+                                            </StackLayout>
+
+                                            <Label Text="{Binding Comment}" />
+
+                                        </StackLayout>
+                                        <BoxView HeightRequest="1" Color="White" HorizontalOptions="FillAndExpand" />
+                                    </StackLayout>
+
+
+                                </ViewCell>
+
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+
+                </StackLayout>
+
+                
+            </StackLayout>
+           
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

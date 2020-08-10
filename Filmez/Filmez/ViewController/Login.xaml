@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Filmez.ViewController.Login"
+             BackgroundColor="#ce93d8">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="10" > 
+            <Label Text="Bem vindo ao FILMEZ!" FontSize="24" TextColor="Purple" />
+            <Label Text="Qual seu nick name:" FontSize="18"/>
+            <Entry x:Name="NickName" />
+            <Button Clicked="Login_Clicked" Text="Entrar" BackgroundColor="#6a1b9a"/>
+            <Label Text="Ainda não é cadastrado?"/>
+            <Label Text="Clique no botão abaixo para se cadastrar."/>
+            <Button Clicked="Register_Clicked" Text="Cadastre-se" BackgroundColor="#6a1b9a"/>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
